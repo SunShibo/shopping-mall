@@ -4,7 +4,7 @@
 
 <mapper namespace="com.wisewintech.dao.UserDAO">
 
-    <select id="getUserBOList" resultType="com.wisewintech.base.entity.UserBO">
+    <select id="getUserBOList" resultType="com.wisewintech.base.entity.bo.UserBO">
         select *  from user
     </select>
 

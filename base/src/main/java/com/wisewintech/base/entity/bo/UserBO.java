@@ -1,4 +1,4 @@
-package com.wisewintech.base.entity;
+package com.wisewintech.base.entity.bo;
 
 public class UserBO {
     private Integer id;
