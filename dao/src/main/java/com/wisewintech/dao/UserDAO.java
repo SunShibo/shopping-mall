@@ -1,6 +1,6 @@
 package com.wisewintech.dao;
 
-import com.wisewintech.base.entity.UserBO;
+import com.wisewintech.base.entity.bo.UserBO;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

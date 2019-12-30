@@ -1,6 +1,6 @@
 package com.wisewintech.controllerapi;
 
-import com.wisewintech.base.entity.UserBO;
+import com.wisewintech.base.entity.bo.UserBO;
 import com.wisewintech.base.util.RedisUtil;
 import com.wisewintech.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
