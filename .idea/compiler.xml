@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="base" />
-        <module name="controller-api" />
-        <module name="controller-backend" />
         <module name="dao" />
+        <module name="controller-backend" />
+        <module name="base" />
         <module name="service" />
+        <module name="controller-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,5 +21,14 @@
       <module name="service" target="1.8" />
       <module name="shoppingmall" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base" options="-parameters" />
+      <module name="controller-api" options="-parameters" />
+      <module name="controller-backend" options="-parameters" />
+      <module name="dao" options="-parameters" />
+      <module name="service" options="-parameters" />
+    </option>
   </component>
 </project>
