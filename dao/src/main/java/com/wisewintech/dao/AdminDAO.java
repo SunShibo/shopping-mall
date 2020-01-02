@@ -3,9 +3,9 @@ package com.wisewintech.dao;
 import cn.hutool.json.JSONArray;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.wisewintech.base.entity.bo.entity.AdminBO;
-import com.wisewintech.base.entity.bo.entity.MenuBO;
-import com.wisewintech.base.entity.bo.entity.RoleBO;
+import com.wisewintech.base.entity.bo.AdminBO;
+import com.wisewintech.base.entity.bo.MenuBO;
+import com.wisewintech.base.entity.bo.RoleBO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 

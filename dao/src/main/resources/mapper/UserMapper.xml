@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.wisewintech.dao.UserDAO">
 
-    <resultMap type="com.wisewintech.base.entity.bo.entity.UserBO" id="MaUserMap">
+    <resultMap type="com.wisewintech.base.entity.bo.UserBO" id="MaUserMap">
         <result property="id" column="id" jdbcType="INTEGER"/>
         <result property="username" column="username" jdbcType="VARCHAR"/>
         <result property="password" column="password" jdbcType="VARCHAR"/>

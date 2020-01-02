@@ -1,7 +1,8 @@
 package com.wisewintech.controllerbackend.base;
 
-import com.wisewintech.base.entity.bo.entity.AdminBO;
+import com.wisewintech.base.entity.bo.AdminBO;
 import com.wisewintech.base.util.RedisUtil;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -145,5 +146,28 @@ public class BaseCotroller {
             if (out != null)
                 out.close();
         }
+    }
+
+
+    /**
+     * 常用参数验证
+     */
+    public boolean verifyParam(Object... obj) {
+        if (obj == null || obj.length < 1) {
+            return false;
+        }
+        for (Object o : obj) {
+            if (o instanceof String) {
+                if (StringUtils.isEmpty((String) o)) {
+                    return false;
+                }
+            } else {
+                if (o == null) {
+                    return false;
+                }
+            }
+        }
+        return true;
+
     }
 }

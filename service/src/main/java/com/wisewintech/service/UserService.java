@@ -1,7 +1,7 @@
 package com.wisewintech.service;
 
 import com.wisewintech.base.config.constants.Constants;
-import com.wisewintech.base.entity.bo.entity.UserBO;
+import com.wisewintech.base.entity.bo.UserBO;
 import com.wisewintech.dao.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

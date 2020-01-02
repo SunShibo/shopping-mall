@@ -3,7 +3,7 @@ package com.wisewintech.controllerapi;
 import cn.hutool.core.util.RandomUtil;
 import com.aliyuncs.CommonResponse;
 import com.wisewintech.base.config.constants.Constants;
-import com.wisewintech.base.entity.bo.entity.UserBO;
+import com.wisewintech.base.entity.bo.UserBO;
 import com.wisewintech.base.entity.dto.ResultDTO;
 import com.wisewintech.base.entity.dto.ResultDTOBuilder;
 import com.wisewintech.base.util.AccountValidatorUtil;

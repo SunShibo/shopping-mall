@@ -1,4 +1,4 @@
-package com.wisewintech.base.entity.bo.entity;
+package com.wisewintech.base.entity.bo;
 
 
 import java.util.Date;

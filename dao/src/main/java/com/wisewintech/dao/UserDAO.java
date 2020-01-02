@@ -1,6 +1,6 @@
 package com.wisewintech.dao;
 
-import com.wisewintech.base.entity.bo.entity.UserBO;
+import com.wisewintech.base.entity.bo.UserBO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 

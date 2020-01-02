@@ -2,6 +2,8 @@ package com.wisewintech.base.config;
 
 import com.wisewintech.base.entity.dto.ResultDTO;
 import com.wisewintech.base.entity.dto.ResultDTOBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  */
 @RestControllerAdvice
 public class RestExceptionHandler {
-
+    static final Logger log = LoggerFactory.getLogger(RestExceptionHandler.class);
     /**
      * 返回json
      *
@@ -19,6 +21,7 @@ public class RestExceptionHandler {
      */
     @ExceptionHandler(value = Exception.class)
     public ResultDTO restExceptionHandle(Exception e) {
+        log.error("error:{}",e);
         return ResultDTOBuilder.failure("00003");
     }
 
